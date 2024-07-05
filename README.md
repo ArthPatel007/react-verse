@@ -47,8 +47,3 @@ npm install
 # or
 yarn install
 
-### Usage
-
-npm start
-# or
-yarn start
