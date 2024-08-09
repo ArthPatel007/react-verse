@@ -1,4 +1,4 @@
-import conf from "../conf/conf.js";
+import conf from "../config/conf";
 import { Client, ID, Databases, Storage, Query } from "appwrite";
 
 export class Service {
@@ -84,14 +84,12 @@ export class Service {
         conf.appwriteDatabaseId,
         conf.appwriteCollectionId,
         queries
-        
       );
     } catch (error) {
       console.log("Appwrite serive :: getPosts :: error", error);
       return false;
     }
   }
-
 
   async uploadFile(file) {
     try {
